@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Budgeting App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>Budgeting App</h1>
+
+    <div id="budget-form" class="container">
+      <h2>Set Budget</h2>
+      <input
+        type="number"
+        id="m-budget"
+        placeholder="Enter Monthly Budget"
+      />
+      <button onclick="addBudget()">Add Budget</button>
+    </div>
+
+    <div id="expense-form" class="container">
+      <h2>Add Expense</h2>
+      <input
+        type="text"
+        id="e-description"
+        placeholder="Expense Description"
+      />
+      <input type="number" id="e-amount" placeholder="Expense Amount" />
+      <input type="date" id="e-date" />
+      <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <div id="expense-list" class="container">
+      <h2>Expense List</h2>
+      <table>
+        <tr>
+          <th>Description</th>
+          <th>Amount</th>
+          <th>Date</th>
+          <th>Action</th>
+        </tr>
+      </table>
+    </div>
+
+    <div id="remaining-budget" class="container">
+      <h2>Remaining Budget</h2>
+      <p id="remaining-budget-value">$0</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

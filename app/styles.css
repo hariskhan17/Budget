@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+h1,
+h2 {
+  color: #2e83ce;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container > * {
+  margin-bottom: 10px;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="date"],
+button {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+}
+
+button {
+  background-color: #337ab7;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #23527c;
+}
+
+#expense-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#expense-list th,
+#expense-list td {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+#expense-list td:last-child {
+  text-align: center;
+}
+
+#expense-list button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: #e74c3c;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#expense-list button:hover {
+  background-color: #c0392b;
+}
+
+#remaining-budget-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #337ab7;
+  text-align: center;
+}
